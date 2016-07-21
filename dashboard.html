@@ -61,14 +61,14 @@
          <div class="panel panel-default">
           <div class="panel-body">
           <ul class="nav nav-sidebar"><br><br>
-           <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+           <li class="active" data-toggle="tooltip" data-placement="right" title="Dashboard Overview" Tooltip on right><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li data-toggle="tooltip" data-placement="right" title="View more Report on Traffic" Tooltip on right><a href="#">Reports</a></li>
+            <li data-toggle="tooltip" data-placement="right" title="Site Analytics" Tooltip on right><a href="#">Analytics</a></li>
+            <li data-toggle="tooltip" data-placement="right" title="Export Transaction Report" Tooltip on right><a href="#">Export</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Upload User</a></li>
-            <li><a href="">Issue Clearance</a></li>
+            <li data-toggle="tooltip" data-placement="right" title="Import Transactions" Tooltip on right><a href="">Import</a></li>
+            <li data-toggle="tooltip" data-placement="right" title="Issue Clearance" Tooltip on right><a href="">Clearances</a></li>
           
           </ul>
 
@@ -99,6 +99,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
        <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+    <script>
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
   </body>
 </html>
